@@ -1,0 +1,42 @@
+
+.textbox{
+   width:456px;
+   height:76px;
+   background:transparent;
+   border:2px solid lightgray;
+   border-radius:5px;
+   outline:none;
+   padding:010px;
+   font-size:20px;
+   color:black;
+   font-weight: 700;
+}
+.form-label{
+   position: absolute;
+   top:20px;
+   left: 1rem;
+   font-weight: bold;
+   font-size: 20px;
+   cursor: text;
+   transition: all 0.3s ease-in;
+}
+.textbox:focus {
+   
+   border:2px solid #05BC61;
+   
+   background-color: #CDF2DF;
+  
+   
+}
+
+.textbox:focus ~ .form-label,
+.textbox:not(:placeholder-shown).textbox:not(:focus)~.form-label
+{
+   top:-0.6rem;
+   left:1.6rem;
+   font-size: 13px;
+   color:#05BC61;
+   font-weight: bold;
+   background: white;
+   padding:0px 5px;
+}

@@ -1,3 +1,0 @@
-.authentication-input{
-    @apply lg:w-[456px] w-full lg:h-[76px] h-[70px] rounded border border-gray-200  focus:outline-primary pl-5 text-[22px] font-semibold focus:bg-primary focus:bg-opacity-10 text-black
-}
