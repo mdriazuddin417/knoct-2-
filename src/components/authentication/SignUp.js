@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ScanCode from "./ScanCode";
+import { AiOutlineQrcode } from "react-icons/ai";
 import authentication from "../../image/authenticaion1.png";
 import { ImArrowRight2 } from "react-icons/im";
 import "./authentication.css";
@@ -10,7 +10,7 @@ const SignUp = () => {
   const [otp, setOtp] = useState("");
   return (
     <div className="grid lg:grid-cols-5  grid-cols-1 h-screen ">
-      <div className="  flex flex-col col-span-2  justify-center items-center p-5">
+      <div className="  flex flex-col col-span-2  justify-center items-center p-5 gap-5">
         <h2 className="text-black text-3xl font-bold py-7 ">Welcome back </h2>
         <div className="w-full space-y-5 px-5">
           <div className="w-full space-y-3 ">
@@ -18,7 +18,7 @@ const SignUp = () => {
               <input
                 type="text"
                 onChange={(e) => setName(e.target.value)}
-                className="textbox"
+                className="textbox "
                 placeholder=" "
               />
               <label htmlFor="" className="form-label">
@@ -60,11 +60,14 @@ const SignUp = () => {
             </div>
           </div>
 
-          <button className="  w-full h-[70px] bg-primary text-[22px] font-bold rounded text-white">
+          <button className="  w-full h-[62px] bg-primary text-[22px] font-bold rounded text-white ">
             Submit
           </button>
+          <div class="divider font-bold">OR</div>
+          <button className="  w-full h-[62px] bg-accent text-[22px] font-bold rounded text-white flex justify-center items-center gap-2">
+            <AiOutlineQrcode className="text-3xl" /> Signup with QR Code
+          </button>
         </div>
-        <ScanCode />
       </div>
       <div className="bg-primary  flex flex-col  justify-center items-center text-white lg:px-10 col-span-3  gap-6 lg:p-10 p-3 text-center">
         <div>

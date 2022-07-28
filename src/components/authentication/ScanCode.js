@@ -6,7 +6,7 @@ const ScanCode = () => {
       <p className="font-bold lg:text-2xl md:text-2xl text-xl">
         or scan QR code
       </p>
-      <img src={code} alt="" className="lg:w-1/2 w-1/3" />
+      <img src={code} alt="" className="w-2/5" />
       <p className="font-semibold text-xl">
         Do not have an account?
         <span className="text-primary font-bold cursor-pointer">

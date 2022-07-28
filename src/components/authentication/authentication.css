@@ -1,32 +1,29 @@
 
 .textbox{
-   width:456px;
-   height:76px;
+   width:100%;
+   height:62px;
    background:transparent;
-   border:2px solid lightgray;
+   border:1px solid lightgray;
    border-radius:5px;
    outline:none;
-   padding:010px;
-   font-size:20px;
+   padding:0 10px;
+   font-size:18px;
    color:black;
    font-weight: 700;
 }
 .form-label{
    position: absolute;
-   top:20px;
+   top:15px;
    left: 1rem;
    font-weight: bold;
    font-size: 20px;
    cursor: text;
    transition: all 0.3s ease-in;
-}
-.textbox:focus {
-   
-   border:2px solid #05BC61;
-   
+   color:gray}
+.textbox:focus { 
+   border:1px solid #05BC61; 
    background-color: #CDF2DF;
   
-   
 }
 
 .textbox:focus ~ .form-label,
